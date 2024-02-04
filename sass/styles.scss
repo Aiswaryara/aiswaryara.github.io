@@ -1,3 +1,16 @@
-h1 {
-  color: blue;
-}
+//base
+@import './base/variables';
+@import './base/mixins';
+@import './base/reset';
+@import './base/global';
+
+//components
+@import './components/buttons';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+
+//pages
+@import './pages/home';
+@import './pages/menu';

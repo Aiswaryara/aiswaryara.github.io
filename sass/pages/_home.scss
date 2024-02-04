@@ -1,0 +1,79 @@
+//location
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: green;
+  padding: 20px;
+  box-shadow: 3px 3px 3px grey;
+  gap: 20px;
+
+  &__icon {
+    //icon styles
+    color: blue;
+    font-size: 20px;
+  }
+
+  &__text {
+    // styles
+    color: red;
+  }
+}
+
+//book the meal you want
+.book-meal {
+  background: blue;
+  padding: 30px;
+  text-align: center;
+
+  &__title {
+    color: red;
+  }
+
+  &__description {
+    color: green;
+  }
+
+  &__btn {
+    margin: 50px;
+    padding: 0;
+  }
+}
+
+//how it works styles here
+.how-works {
+  &__heading {
+    //heading
+  }
+
+  &__card {
+  }
+
+  &__icon-number {
+  }
+
+  &__icon {
+  }
+
+  &__text {
+  }
+}
+
+//restaurants
+.restaurants {
+  &__heading {
+    //heading
+  }
+
+  &__card {
+  }
+
+  &__label {
+  }
+
+  &__name {
+  }
+
+  &__location {
+  }
+}

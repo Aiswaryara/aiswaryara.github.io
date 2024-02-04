@@ -1,0 +1,11 @@
+//the logo stuff in this file
+.header {
+  //default header no arrow
+  position: relative;
+  text-align: center;
+}
+
+.header__arrow {
+  position: absolute;
+  left: 0;
+}
