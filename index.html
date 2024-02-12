@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,7 +16,9 @@
 
   <body>
     <header class="header">
-      <img src="images/logo/ohmyfood.png" alt="oh my food logo" />
+      <div class="header__logo">
+        <img src="images/logo/ohmyfood.png" alt="oh my food logo" />
+      </div>
     </header>
     <div class="location">
       <i class="fa-solid fa-location-dot"></i>
@@ -27,38 +29,39 @@
       <p class="book-meal__description">
         Discover our carefully selected high-end restaurants
       </p>
-      <button class="btn">Explore our restaurants</button>
+      <button class="book-meal__btn">Explore our restaurants</button>
     </div>
-    <div class="how_it_works">
-      <h1>How it works</h1>
-      <div>
-        <button class="btn">
-          <i class="fa-solid fa-mobile-screen"></i>Choose a restaurant
-        </button>
+    <div class="how-works">
+      <h1 class="how-works__heading">How it works</h1>
       </div>
-      <div>
-        <button class="btn">
-          <i class="fa-solid fa-bars"></i>Build your meal
-        </button>
-      </div>
-      <div>
-        <button class="btn">
-          <i class="fa-solid fa-store"></i>Enjoy your meal at the restaurant
-        </button>
+
+      <div class="how-works__second_container">
+        <div class="how-works__card">
+          <i class="how-works__icon fa-mobile-screen"></i> <p class="how-works__text">Choose a restaurant</p>
+        </div>
+        <div class="how-works__card">
+          <i class="how-works__icon fa-solid fa-bars"></i><p class="how-works__text">Build your meal</p>
+        </div>
+        <div class="how-works__card">
+          <i class="how-works__icon fa-solid fa-store"></i> <p class="how-works__text"> Enjoy your meal at
+          the restaurant</p>
+        </div>
       </div>
     </div>
 
-    <h1>restaurants</h1>
-    <div class="restaurants_imgs">
+    <h1 class="restaurants__heading">restaurants</h1>
+    <div class="restaurants_card">
       <div class="restaurant_1">
         <img
           src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
           alt="restaurant_1"
         />
         <div class="restaurant_1_heading">
-          <h2>Kitchen West</h2>
-          <p>Angel</p>
-          <i class="fa-regular fa-heart"></i>
+          <h2 class="restaurants__name">Kitchen West</h2>
+          <p class="restaurants__location">Angel</p>
+          <button>
+            <i class="fa-regular fa-heart"></i>
+          </button>
         </div>
       </div>
       <div class="restaurant_2">
@@ -67,9 +70,11 @@
           alt="restaurant_2"
         />
         <div class="restaurant_2_heading">
-          <h2>Elderflower</h2>
-          <p>Old Street</p>
-          <i class="fa-solid fa-heart"></i>
+          <h2 class="restaurants__name">Elderflower</h2>
+          <p class="restaurants__location">Old Street</p>
+          <button>
+            <i class="fa-solid fa-heart"></i>
+          </button>
         </div>
       </div>
       <div class="restaurant_3">
@@ -78,9 +83,11 @@
           alt="restaurant_3"
         />
         <div class="restaurant_3_heading">
-          <h2>Shoreditch Canteen</h2>
-          <p>Shoreditch</p>
-          <i class="fa-regular fa-heart"></i>
+          <h2 class="restaurants__name">Shoreditch Canteen</h2>
+          <p class="restaurants__location">Shoreditch</p>
+          <button>
+            <i class="fa-regular fa-heart"></i>
+          </button>
         </div>
       </div>
       <div class="restaurant_4">
@@ -89,9 +96,11 @@
           alt="restaurant_4"
         />
         <div class="restaurant_4_heading">
-          <h2>The Bay Leaf</h2>
-          <p>Hoxton</p>
-          <i class="fa-regular fa-heart"></i>
+          <h2 class="restaurants__name">The Bay Leaf</h2>
+          <p class="restaurants__location">Hoxton</p>
+          <button>
+            <i class="fa-regular fa-heart"></i>
+          </button>
         </div>
       </div>
     </div>
