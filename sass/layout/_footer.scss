@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  background-color: black;
+
+  &__footer-section {
+    display: flex;
+    background-color: black;
+    @include desktop-only {
+      width: calc(100% / 4 -20px);
+    }
+  }
+
+  &__heading {
+    color: white;
+    font-family: Roboto;
+  }
+  &__logo-f {
+    font-weight: 400;
+    size: 18px;
+    color: white;
+  }
+  &__logo {
+    font-weight: 400;
+    size: 18px;
+    color: white;
+  }
+}
+.fa-vect {
+  color: white;
+  padding-right: 10px;
+}

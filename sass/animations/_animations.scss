@@ -1,0 +1,17 @@
+.heart {
+  position: relative;
+
+  &:hover &__filled.fa-heart {
+    display: block;
+    color: #9356dc;
+  }
+
+  &__filled,
+  &__empty {
+    position: absolute;
+  }
+
+  &__filled.fa-heart {
+    display: none;
+  }
+}
