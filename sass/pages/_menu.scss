@@ -24,6 +24,9 @@
   align-items: center;
   padding-bottom: 20px;
   justify-content: space-between;
+  @include desktop-only {
+    padding: 0 150px;
+  }
   &__main_heading {
     font-size: 28px;
     font-weight: 400;

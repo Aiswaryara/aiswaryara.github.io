@@ -402,6 +402,11 @@ body {
   padding-bottom: 20px;
   justify-content: space-between;
 }
+@media (min-width: 1024px) {
+  .first_heading {
+    padding: 0 150px;
+  }
+}
 .first_heading__main_heading {
   font-size: 28px;
   font-weight: 400;
