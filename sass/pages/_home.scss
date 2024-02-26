@@ -151,6 +151,7 @@
     background-color: white;
     @include desktop-only {
       width: calc(100% / 2 - 60px);
+
       /* border: 1px solid green;*/
     }
   }
@@ -158,8 +159,9 @@
     border-radius: 20px 20px 0 0;
     /*border: 1px solid yellow;*/
     height: 251px;
-    gap: 30px;
+
     width: 100%;
+    object-fit: cover;
   }
 
   &__label {
