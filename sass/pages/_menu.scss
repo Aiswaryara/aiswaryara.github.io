@@ -1,0 +1,72 @@
+/*.kitchen_west_container {
+  background-image: src(
+    "images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=
+      "restaurant_1" class= "restaurants__pic"
+  );
+  align-items: center;
+  border: 1px solid blue;
+  font-size: shrikhand;
+  color: red;
+  display: flex;
+}*/
+
+.overlapping_section {
+  align-items: center;
+  background: #f6f6f6;
+  /*border: 1px solid blue;*/
+  margin-left: 200px;
+  width: calc(70% - 20px);
+  border-radius: 20px;
+  padding: 50px;
+}
+.first_heading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  &__main_heading {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: Shrikhand;
+    font-style: italic;
+  }
+}
+.sub_headings {
+  &__main_subheadings {
+    padding-bottom: 25px;
+  }
+}
+
+.discribtions {
+  /* border: 1px solid yellowgreen;*/
+  border-radius: 15px;
+  box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001a;
+  background-color: white;
+  margin: 10px 0 10px 0;
+  padding: 20px;
+  &__lineone {
+    font-family: Roboto;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__linetwo {
+    font-size: 13px;
+    font-family: Roboto;
+    color: black;
+    font-weight: 300;
+  }
+}
+
+.btn {
+  color: #ffff;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-family: roboto;
+  box-shadow: 0px 4px 10px 0px #fff;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+
+.eg {
+  border: 1px solid darkmagenta;
+}
