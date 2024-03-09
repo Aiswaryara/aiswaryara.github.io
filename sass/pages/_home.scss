@@ -54,7 +54,6 @@
 
     &:hover {
       cursor: pointer;
-      border: 1px solid red;
     }
   }
 }
@@ -143,7 +142,6 @@
     flex-flow: row wrap;
     gap: 60px;
     padding: 50px;
-    border: 1px solid blue;
   }
 
   &__img {
@@ -151,6 +149,9 @@
     background-color: white;
     @include desktop-only {
       width: calc(100% / 2 - 60px);
+      &:hover {
+        cursor: pointer;
+      }
 
       /* border: 1px solid green;*/
     }
@@ -188,7 +189,18 @@
     width: 355.97px;
     height: 24px;
   }
-  &__fa-hearts {
-    color: #9356dc;
+  &__img_text_block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #99e2d0;
+    color: #008766;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 350px;
+
+    padding: 10px 40px 10px 40px;
   }
 }

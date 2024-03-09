@@ -251,7 +251,6 @@ body {
 }
 .book-meal__btn:hover {
   cursor: pointer;
-  border: 1px solid red;
 }
 
 .how-works {
@@ -329,7 +328,6 @@ body {
   flex-flow: row wrap;
   gap: 60px;
   padding: 50px;
-  border: 1px solid blue;
 }
 .restaurants__img {
   position: relative;
@@ -339,6 +337,9 @@ body {
   .restaurants__img {
     width: calc(50% - 60px);
     /* border: 1px solid green;*/
+  }
+  .restaurants__img:hover {
+    cursor: pointer;
   }
 }
 .restaurants__pic {
@@ -371,8 +372,18 @@ body {
   width: 355.97px;
   height: 24px;
 }
-.restaurants__fa-hearts {
-  color: #9356dc;
+.restaurants__img_text_block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #99e2d0;
+  color: #008766;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 350px;
+  padding: 10px 40px 10px 40px;
 }
 
 /*.kitchen_west_container {
@@ -386,14 +397,32 @@ body {
   color: red;
   display: flex;
 }*/
+.restaurants__pic {
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 1024px) {
+  .restaurants__pic {
+    height: 383px;
+  }
+}
+
 .overlapping_section {
+  position: relative;
   align-items: center;
   background: #f6f6f6;
   /*border: 1px solid blue;*/
-  margin-left: 200px;
-  width: calc(70% - 20px);
-  border-radius: 20px;
+  border-radius: 40px;
   padding: 50px;
+  max-width: 1055px;
+  margin: -50px auto 0 auto;
+}
+.overlapping_section__container {
+  max-width: 640px;
+  margin: 0 auto;
 }
 
 .first_heading {
@@ -414,11 +443,21 @@ body {
   font-style: italic;
 }
 
-.sub_headings__main_subheadings {
+.dishes__subheading {
+  position: relative;
   padding-bottom: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-
-.discribtions {
+.dishes__subheading::after {
+  content: "";
+  border: 1px solid menu-border;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.dishes__descriptions {
   /* border: 1px solid yellowgreen;*/
   border-radius: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
@@ -426,17 +465,20 @@ body {
   margin: 10px 0 10px 0;
   padding: 20px;
 }
-.discribtions__lineone {
+.dishes__title {
   font-family: Roboto;
   color: black;
   font-size: 18px;
   font-weight: 500;
 }
-.discribtions__linetwo {
+.dishes__description {
   font-size: 13px;
   font-family: Roboto;
   color: black;
   font-weight: 300;
+}
+.dishesamount {
+  display: flex;
 }
 
 .btn {
@@ -446,8 +488,4 @@ body {
   font-family: roboto;
   box-shadow: 0px 4px 10px 0px #fff;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-}
-
-.eg {
-  border: 1px solid darkmagenta;
 }/*# sourceMappingURL=styles.css.map */
