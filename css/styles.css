@@ -137,14 +137,23 @@ body {
   position: relative;
 }
 .heart:hover .heart__filled.fa-heart {
-  display: block;
-  color: #9356dc;
+  cursor: pointer;
+  opacity: 1;
 }
 .heart__filled, .heart__empty {
+  z-index: 1;
   position: absolute;
+  top: 0;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .heart__filled.fa-heart {
-  display: none;
+  background: linear-gradient(pink, purple);
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
 }
 
 .header {
@@ -268,31 +277,31 @@ body {
   border-radius: 20px;
   display: flex;
   flex-flow: row wrap;
-  gap: 10px;
-  padding-left: 20px;
+  gap: 30px;
+  padding-left: 30px;
 }
 .how-works__card {
   position: relative;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   background: #f6f6f6;
   border-radius: 20px;
-  width: 335px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 20px 20px;
 }
 @media (min-width: 1024px) {
   .how-works__card {
-    width: calc(33.3333333333% - 10px);
+    width: calc(33.3333333333% - 30px);
   }
 }
 .how-works__icon-number {
   position: absolute;
-  left: 0;
+  left: -12px;
   background-color: #9356dc;
   color: #fff;
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -312,50 +321,52 @@ body {
 .restaurants {
   background: #f6f6f6;
   padding-top: 20px;
-  padding-left: 20px;
 }
 .restaurants__heading {
-  height: 28px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
+  padding-left: 20px;
 }
-.restaurants__card {
+.restaurants__cards {
   display: flex;
   flex-flow: row wrap;
-  gap: 60px;
-  padding: 50px;
+  gap: 100px;
+  row-gap: 50px;
+  padding-left: 20px;
 }
-.restaurants__img {
+.restaurants__card {
   position: relative;
   background-color: white;
 }
 @media (min-width: 1024px) {
-  .restaurants__img {
+  .restaurants__card {
     width: calc(50% - 60px);
     /* border: 1px solid green;*/
   }
-  .restaurants__img:hover {
+  .restaurants__card:hover {
     cursor: pointer;
   }
 }
 .restaurants__pic {
   border-radius: 20px 20px 0 0;
   /*border: 1px solid yellow;*/
-  height: 251px;
+  height: 210px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .restaurants__label {
+  position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 .restaurants__name {
-  width: 384.79px;
-  height: 20px;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
@@ -369,12 +380,10 @@ body {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  width: 355.97px;
-  height: 24px;
 }
 .restaurants__img_text_block {
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
   background-color: #99e2d0;
   color: #008766;
@@ -382,32 +391,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  margin-bottom: 350px;
   padding: 10px 40px 10px 40px;
-}
-
-/*.kitchen_west_container {
-  background-image: src(
-    "images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=
-      "restaurant_1" class= "restaurants__pic"
-  );
-  align-items: center;
-  border: 1px solid blue;
-  font-size: shrikhand;
-  color: red;
-  display: flex;
-}*/
-.restaurants__pic {
-  height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  display: block;
-}
-@media (min-width: 1024px) {
-  .restaurants__pic {
-    height: 383px;
-  }
 }
 
 .overlapping_section {
@@ -442,7 +426,20 @@ body {
   font-family: Shrikhand;
   font-style: italic;
 }
+.first_heading__btn {
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-family: roboto;
+  box-shadow: 0px 4px 10px 0px #fff;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+}
 
+.dishes {
+  /*&amount {
+    display: flex;
+  }*/
+}
 .dishes__subheading {
   position: relative;
   padding-bottom: 25px;
@@ -477,11 +474,80 @@ body {
   color: black;
   font-weight: 300;
 }
-.dishesamount {
+
+/************** second page ***************/
+.overlapping_section1 {
+  position: relative;
+  align-items: center;
+  background: #f6f6f6;
+  /*border: 1px solid blue;*/
+  border-radius: 40px;
+  padding: 50px;
+  max-width: 1055px;
+  margin: -50px auto 0 auto;
+}
+.overlapping_section1__container1 {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.first_heading1 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .first_heading1 {
+    padding: 0 150px;
+  }
+}
+.first_heading1__main_heading1 {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: Shrikhand;
+  font-style: italic;
+}
+
+.dishes1__subheading1 {
+  position: relative;
+  padding-bottom: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.dishes1__subheading1::after {
+  content: "";
+  border: 1px solid menu-border;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.dishes1__descriptions1 {
+  /* border: 1px solid yellowgreen;*/
+  border-radius: 15px;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: white;
+  margin: 10px 0 10px 0;
+  padding: 20px;
+}
+.dishes1__title1 {
+  font-family: Roboto;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dishes1__description1 {
+  font-size: 13px;
+  font-family: Roboto;
+  color: black;
+  font-weight: 300;
+}
+.dishes1amount1 {
   display: flex;
 }
 
-.btn {
+.btn1 {
   color: white;
   padding: 15px 30px;
   border-radius: 25px;

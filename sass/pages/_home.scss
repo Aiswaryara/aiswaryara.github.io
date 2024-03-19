@@ -75,8 +75,8 @@
     border-radius: 20px;
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
-    padding-left: 20px;
+    gap: 30px;
+    padding-left: 30px;
   }
 
   &__card {
@@ -84,22 +84,22 @@
     box-shadow: 0px 4px 15px 0px #00000026;
     background: #f6f6f6;
     border-radius: 20px;
-    width: 335px;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 20px 20px;
     @include desktop-only {
-      width: calc(100% / 3 - 10px);
+      width: calc(100% / 3 - 30px);
     }
   }
 
   &__icon-number {
     position: absolute;
-    left: 0;
+    left: -12px;
     background-color: #9356dc;
     color: #fff;
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -124,27 +124,26 @@
   background: #f6f6f6;
   padding-top: 20px;
 
-  padding-left: 20px;
   &__heading {
     //heading
-
-    height: 28px;
     font-family: Roboto;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
+    padding-left: 20px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 100px;
+    row-gap: 50px;
+    padding-left: 20px;
   }
 
   &__card {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 60px;
-    padding: 50px;
-  }
-
-  &__img {
     position: relative;
     background-color: white;
     @include desktop-only {
@@ -159,19 +158,21 @@
   &__pic {
     border-radius: 20px 20px 0 0;
     /*border: 1px solid yellow;*/
-    height: 251px;
+    height: 210px;
 
     width: 100%;
     object-fit: cover;
   }
 
   &__label {
+    position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
   }
 
   &__name {
-    width: 384.79px;
-    height: 20px;
     font-family: Roboto;
     font-size: 18px;
     font-weight: 700;
@@ -186,12 +187,10 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    width: 355.97px;
-    height: 24px;
   }
   &__img_text_block {
     position: absolute;
-    bottom: 20px;
+    top: 20px;
     right: 20px;
     background-color: #99e2d0;
     color: #008766;
@@ -199,8 +198,6 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
-    margin-bottom: 350px;
-
     padding: 10px 40px 10px 40px;
   }
 }
