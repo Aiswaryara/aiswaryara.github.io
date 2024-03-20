@@ -177,7 +177,6 @@ body {
 }
 
 .footer {
-  display: flex;
   flex-flow: row wrap;
   gap: 5px;
   background-color: black;
@@ -185,7 +184,6 @@ body {
 .footer__footer-section {
   display: flex;
   background-color: black;
-  padding: 30px 0px 10px 10px;
 }
 @media (min-width: 1024px) {
   .footer__footer-section {
@@ -195,10 +193,6 @@ body {
 .footer__heading {
   color: white;
   font-family: Roboto;
-}
-.footer__logo-f {
-  font-weight: 400;
-  color: white;
 }
 .footer__logo {
   padding-top: 30px;
