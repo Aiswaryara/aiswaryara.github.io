@@ -201,3 +201,9 @@
     padding: 10px 40px 10px 40px;
   }
 }
+.heart {
+  color: black;
+  &__filled {
+    color: #9356dc;
+  }
+}
