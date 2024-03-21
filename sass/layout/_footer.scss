@@ -1,13 +1,27 @@
 .footer {
-  flex-flow: row wrap;
-  gap: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 12px;
   background-color: black;
+  padding: 30px;
+  @include desktop-only {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 10px 30px 0;
+  }
 
   &__footer-section {
     display: flex;
     background-color: black;
+    align-items: center;
+
+    // width: 100%;
     @include desktop-only {
-      width: calc(50% - 5px);
+      &:first-child {
+        order: 1;
+      }
     }
   }
 
@@ -16,9 +30,8 @@
     font-family: Roboto;
   }
   &__logo {
-    padding-top: 30px;
     font-weight: 400;
-    font-family: "Shrikhand", serif;
+    font-family: 'Shrikhand', serif;
     color: white;
   }
 }

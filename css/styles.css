@@ -177,17 +177,29 @@ body {
 }
 
 .footer {
-  flex-flow: row wrap;
-  gap: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 12px;
   background-color: black;
+  padding: 30px;
+}
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 10px 30px 0;
+  }
 }
 .footer__footer-section {
   display: flex;
   background-color: black;
+  align-items: center;
 }
 @media (min-width: 1024px) {
-  .footer__footer-section {
-    width: calc(50% - 5px);
+  .footer__footer-section:first-child {
+    order: 1;
   }
 }
 .footer__heading {
@@ -195,7 +207,6 @@ body {
   font-family: Roboto;
 }
 .footer__logo {
-  padding-top: 30px;
   font-weight: 400;
   font-family: "Shrikhand", serif;
   color: white;
@@ -331,10 +342,17 @@ body {
   gap: 100px;
   row-gap: 50px;
   padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurants__cards {
+    padding-right: 0;
+  }
 }
 .restaurants__card {
   position: relative;
   background-color: white;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .restaurants__card {
@@ -389,6 +407,8 @@ body {
 }
 
 .heart {
+  height: 21px;
+  width: 22px;
   color: black;
 }
 .heart__filled {
@@ -461,17 +481,17 @@ body {
   margin: 10px 0 10px 0;
   padding: 20px;
 }
-.dishes__descriptions:hover .dishes__descriptions__title,
-.dishes__descriptions:hover .dishes__descriptions__description {
+.dishes__descriptions:hover .dishes__title,
+.dishes__descriptions:hover .dishes__description {
   margin-right: 120px;
 }
-.dishes__descriptions:hover .dishes__descriptions__tick-box {
+.dishes__descriptions:hover .dishes__tick-box {
   right: 0;
 }
-.dishes__descriptions:hover .dishes__descriptions__tick {
+.dishes__descriptions:hover .dishes__tick {
   transform: rotate(360deg);
 }
-.dishes__descriptions:hover .dishes__descriptions__price {
+.dishes__descriptions:hover .dishes__price {
   right: 100px;
 }
 .dishes__title {
