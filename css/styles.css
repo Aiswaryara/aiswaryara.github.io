@@ -407,8 +407,6 @@ body {
 }
 
 .heart {
-  height: 21px;
-  width: 22px;
   color: black;
 }
 .heart__filled {
@@ -516,8 +514,8 @@ body {
 }
 .dishes__price {
   transition: right 3s ease-out;
-  position: relative;
-  left: 50%;
+  position: absolute;
+  left: 76%;
   transform: translateX(-50%);
 }
 .dishes__tick-box {

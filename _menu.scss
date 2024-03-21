@@ -48,7 +48,7 @@
     padding-bottom: 10px;
     margin-bottom: 10px;
     &::after {
-      content: "";
+      content: '';
       border: 1px solid menu-border;
       width: 50px;
       position: absolute;
@@ -104,14 +104,16 @@
   }
   &__price {
     transition: right 3s ease-out;
-    position: absolute;
-    left: 76%;
+    position: relative;
+    left: 50%;
     transform: translateX(-50%);
   }
   &__tick-box {
     background: #99e2d0;
     position: absolute;
+
     top: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
