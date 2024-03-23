@@ -79,6 +79,8 @@
     background-color: white;
     margin: 10px 0 10px 0;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
   }
 
   &__title {
@@ -112,10 +114,14 @@
     background: #99e2d0;
     position: absolute;
     top: 0;
+    right: -120px;
+    height: 100%;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: right 3s ease-out;
+    border-radius: 2px;
   }
 
   &__tick {
