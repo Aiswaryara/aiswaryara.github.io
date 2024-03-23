@@ -124,15 +124,107 @@ body {
 }
 
 .btn {
-  background: purple;
-  color: #fff;
-  padding: 20px;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-family: roboto;
+  box-shadow: 0px 4px 10px 0px #fff;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+}
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(193.33deg, #7e30de -11.44%, #ff79da 123.93%);
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
 
 .btn-large {
   padding: 20px 40px;
 }
 
+.page-loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  animation: hide-page-loader 0s ease 1s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes hide-page-loader {
+  to {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}
+.loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.6em;
+  height: 0.6em;
+  margin: 0.19em;
+  background: #007db6;
+  border-radius: 0.6em;
+  animation: loading 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loading span:nth-of-type(2) {
+  background: #008fb2;
+  animation-delay: 0.2s;
+}
+
+.loading span:nth-of-type(3) {
+  background: #009b9e;
+  animation-delay: 0.4s;
+}
+
+.loading span:nth-of-type(4) {
+  background: #00a77d;
+  animation-delay: 0.6s;
+}
+
+.loading span:nth-of-type(5) {
+  background: #00b247;
+  animation-delay: 0.8s;
+}
+
+.loading span:nth-of-type(6) {
+  background: #5ab027;
+  animation-delay: 1s;
+}
+
+.loading span:nth-of-type(7) {
+  background: #a0b61e;
+  animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .heart {
   position: relative;
 }
@@ -156,6 +248,32 @@ body {
   transition: opacity 2s ease-in-out;
 }
 
+.animation-1-menu,
+.animation-2-menu,
+.animation-3-menu {
+  animation: menu-slide ease 6.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.animation-2-menu {
+  animation-delay: 2.5s;
+}
+
+.animation-3-menu {
+  animation-delay: 4.5s;
+}
+
+@keyframes menu-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
 .header {
   position: relative;
   text-align: center;
@@ -254,18 +372,6 @@ body {
   line-height: 21px;
   letter-spacing: 0em;
   padding-bottom: 20px;
-}
-.book-meal__btn {
-  color: white;
-  padding: 15px 30px;
-  border-radius: 25px;
-  font-family: roboto;
-  box-shadow: 0px 4px 10px 0px #fff;
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
-}
-.book-meal__btn:hover {
-  cursor: pointer;
-  background: linear-gradient(193.33deg, #7e30de -11.44%, #ff79da 123.93%);
 }
 
 .how-works {
@@ -421,7 +527,7 @@ body {
   background: #f6f6f6;
   /*border: 1px solid blue;*/
   border-radius: 40px;
-  padding: 50px;
+  padding: 40px 20px;
   max-width: 1055px;
   margin: -50px auto 0 auto;
 }
@@ -447,17 +553,6 @@ body {
   font-family: Shrikhand;
   font-style: italic;
 }
-.first_heading__btn {
-  color: white;
-  padding: 15px 30px;
-  border-radius: 25px;
-  font-family: roboto;
-  box-shadow: 0px 4px 10px 0px #fff;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .dishes__subheading {
   position: relative;
@@ -467,7 +562,7 @@ body {
 }
 .dishes__subheading::after {
   content: "";
-  border: 1px solid menu-border;
+  border: 1px solid red;
   width: 50px;
   position: absolute;
   bottom: 0;
@@ -479,7 +574,7 @@ body {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   background-color: white;
   margin: 10px 0 10px 0;
-  padding: 20px;
+  padding: 15px;
   position: relative;
   overflow: hidden;
 }
@@ -494,7 +589,7 @@ body {
   transform: rotate(360deg);
 }
 .dishes__descriptions:hover .dishes__price {
-  right: 100px;
+  right: 78px;
 }
 .dishes__title {
   font-family: Roboto;
@@ -504,7 +599,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: margin 3s ease-out;
+  transition: margin 2s ease-out;
   margin-bottom: 5px;
 }
 .dishes__description {
@@ -515,12 +610,13 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: margin 3s ease-out;
+  transition: margin 2s ease-out;
 }
 .dishes__price {
-  transition: right 3s ease-out;
+  transition: right 2s ease-out;
   position: absolute;
-  left: 76%;
+  right: 0;
+  bottom: 15px;
   transform: translateX(-50%);
 }
 .dishes__tick-box {
@@ -533,13 +629,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: right 3s ease-out;
+  transition: right 2s ease-out;
   border-radius: 2px;
 }
 .dishes__tick {
   color: #fff;
   transform: rotate(0deg);
-  transition: transform 3s ease-out;
 }
 
 /************** second page ***************//*# sourceMappingURL=styles.css.map */
