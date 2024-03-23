@@ -505,6 +505,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: margin 3s ease-out;
+  margin-bottom: 5px;
 }
 .dishes__description {
   font-size: 13px;
