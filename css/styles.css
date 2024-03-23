@@ -226,6 +226,7 @@ body {
   }
 }
 .heart {
+  font-size: 20px;
   position: relative;
 }
 .heart:hover .heart__filled.fa-heart {
@@ -298,24 +299,28 @@ body {
   display: flex;
   flex-flow: column wrap;
   gap: 12px;
-  background-color: black;
+  background: #353535;
   padding: 30px;
 }
 @media (min-width: 1024px) {
   .footer {
     flex-direction: row;
-    gap: 50px;
+    gap: 60px;
     align-items: center;
     justify-content: end;
-    padding: 20px 10px 30px 0;
+    padding: 10px 5px 20px 0;
   }
 }
 .footer__footer-section {
+  padding-top: 10px;
   display: flex;
-  background-color: black;
+  background: #353535;
   align-items: center;
 }
 @media (min-width: 1024px) {
+  .footer__footer-section {
+    padding-top: 40px;
+  }
   .footer__footer-section:first-child {
     order: 1;
   }
@@ -375,7 +380,12 @@ body {
 }
 
 .how-works {
-  padding: 30px 0 30px 0;
+  padding: 30px 20px 30px 0;
+}
+@media (min-width: 1024px) {
+  .how-works {
+    padding: 30px 0 30px 0;
+  }
 }
 .how-works__heading {
   font-weight: 700;
@@ -423,6 +433,11 @@ body {
   color: #7e7e7e;
   padding: 0 20px;
 }
+.how-works__icon3 {
+  color: #9356dc;
+  font-size: 20px;
+  padding-right: 10px;
+}
 .how-works__text {
   font-family: Roboto;
   font-size: 16px;
@@ -433,6 +448,7 @@ body {
 .restaurants {
   background: #f6f6f6;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 .restaurants__heading {
   font-family: Roboto;
@@ -442,6 +458,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 .restaurants__cards {
   display: flex;
@@ -473,10 +490,20 @@ body {
 .restaurants__pic {
   border-radius: 20px 20px 0 0;
   /*border: 1px solid yellow;*/
-  height: 210px;
+  height: 160px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .restaurants__pic {
+    border-radius: 20px 20px 0 0;
+    /*border: 1px solid yellow;*/
+    height: 210px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .restaurants__label {
   position: relative;
