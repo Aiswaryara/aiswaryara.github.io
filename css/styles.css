@@ -174,7 +174,7 @@ body {
   width: 0.6em;
   height: 0.6em;
   margin: 0.19em;
-  background: #007db6;
+  background: #cb3fac;
   border-radius: 0.6em;
   animation: loading 1s infinite alternate;
 }
@@ -184,32 +184,32 @@ body {
  * Smarter targeting vs nth-of-type?
  */
 .loading span:nth-of-type(2) {
-  background: #008fb2;
+  background: #cd73d3;
   animation-delay: 0.2s;
 }
 
 .loading span:nth-of-type(3) {
-  background: #009b9e;
+  background: #e5b3e6;
   animation-delay: 0.4s;
 }
 
 .loading span:nth-of-type(4) {
-  background: #00a77d;
+  background: #ccbacd;
   animation-delay: 0.6s;
 }
 
 .loading span:nth-of-type(5) {
-  background: #00b247;
+  background: #e2dfe2;
   animation-delay: 0.8s;
 }
 
 .loading span:nth-of-type(6) {
-  background: #5ab027;
+  background: #e8e0e7;
   animation-delay: 1s;
 }
 
 .loading span:nth-of-type(7) {
-  background: #a0b61e;
+  background: #eee8ed;
   animation-delay: 1.2s;
 }
 
@@ -548,6 +548,10 @@ body {
   color: #9356dc;
 }
 
+.restaurants__pic {
+  height: 300px;
+}
+
 .overlapping_section {
   position: relative;
   align-items: center;
@@ -581,6 +585,9 @@ body {
   font-style: italic;
 }
 
+.dishes {
+  margin-bottom: 35px;
+}
 .dishes__subheading {
   position: relative;
   padding-bottom: 25px;
@@ -589,7 +596,7 @@ body {
 }
 .dishes__subheading::after {
   content: "";
-  border: 1px solid red;
+  border: 1px solid #99e2d0;
   width: 50px;
   position: absolute;
   bottom: 0;

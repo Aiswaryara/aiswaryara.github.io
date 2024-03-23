@@ -1,3 +1,6 @@
+.restaurants__pic {
+  height: 300px;
+}
 .overlapping_section {
   position: relative;
   align-items: center;
@@ -29,6 +32,7 @@
   }
 }
 .dishes {
+  margin-bottom: 35px;
   $self: &;
 
   &__subheading {
