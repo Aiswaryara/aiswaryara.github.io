@@ -123,6 +123,10 @@
   &__tick {
     color: #fff;
     transform: rotate(0deg);
+
+    transition: transform $animation-dishes-speed ease-out;
+    font-size: 22px;
+
     //transition: transform $animation-dishes-speed ease-out;
   }
 }
