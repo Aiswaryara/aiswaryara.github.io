@@ -4,6 +4,9 @@
   gap: 12px;
   background: #353535;
   padding: 30px;
+  .footer__heading:hover {
+    text-decoration: underline;
+  }
   @include desktop-only {
     flex-direction: row;
     gap: 60px;
@@ -31,6 +34,9 @@
   &__heading {
     color: white;
     font-family: Roboto;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &__logo {
     font-weight: 400;

@@ -298,6 +298,9 @@ body {
   background: #353535;
   padding: 30px;
 }
+.footer .footer__heading:hover {
+  text-decoration: underline;
+}
 @media (min-width: 1024px) {
   .footer {
     flex-direction: row;
@@ -324,6 +327,9 @@ body {
 .footer__heading {
   color: white;
   font-family: Roboto;
+}
+.footer__heading:hover {
+  text-decoration: underline;
 }
 .footer__logo {
   font-weight: 400;
