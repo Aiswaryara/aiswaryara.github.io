@@ -140,6 +140,7 @@
     row-gap: 50px;
     padding-left: 20px;
     padding-right: 20px;
+
     @include desktop-only {
       padding-right: 0;
     }
@@ -152,6 +153,7 @@
     @include desktop-only {
       width: calc(100% / 2 - 60px);
       &:hover {
+        opacity: 0.8;
         cursor: pointer;
       }
 

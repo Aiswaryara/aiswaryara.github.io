@@ -335,6 +335,7 @@ body {
   font-weight: 400;
   font-family: "Shrikhand", serif;
   color: white;
+  padding-right: 40px;
 }
 
 .fa-vect {
@@ -486,6 +487,7 @@ body {
     /* border: 1px solid green;*/
   }
   .restaurants__card:hover {
+    opacity: 0.8;
     cursor: pointer;
   }
 }
